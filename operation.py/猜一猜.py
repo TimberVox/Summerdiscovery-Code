@@ -11,8 +11,6 @@ while True:
         elif x=="z":
             print(y)
             continue
-        elif x==input ("s",200):
-            break
         elif int(x)>y:
             print("No, my number is lower than ",str(x)," .")
             continue
