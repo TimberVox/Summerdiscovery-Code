@@ -1,8 +1,8 @@
 def fibonacci(n):
-    x=n
+    x=int(n)
     if x==1:
         fibonacci(x)==1
-    if x>1:
-        fibonacci(x)==1/(5**-2(((1+5**-2)/2)**x)-((1-5**-2)/2)**x)
+    elif x>1:
+        fibonacci(x)==(1/5**(1/2))((((1+5**(1/2))/2)**x)-(((1-5**(1/2)))/2)**x)
     return fibonacci(n)
-print (fibonacci(7))
+print(fibonacci(7))
