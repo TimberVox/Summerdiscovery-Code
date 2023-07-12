@@ -2,7 +2,7 @@ import pygame
 
 key_A=97
 key_D=100
-key_Space=32
+key_X=120
 
 
 ground=500
@@ -28,18 +28,22 @@ while running:
                 mario_vel[0] = -600
             if event.key == key_D:
                 mario_vel[0] = 600
-            if event.key == key_Space:
+            if event.key == key_X:
                 mario_vel[1] = -500
         if event.type == pygame.KEYUP:
             if event.key == key_A:
                 mario_vel[0] = 0
             if event.key == key_D:
                 mario_vel[0] = 0
+            if event.key ==key_X:
+                mario_vel[1] = 0
+    
+    mario_vel[1] +=1000*dt
+
     if mario_pos[1]>ground:
         mario_pos[1]=ground
         mario_vel[1]=0
-    
-    mario_vel[1] +=1000*dt
+
     mario_pos[0] += mario_vel[0]*dt
     mario_pos[1] += mario_vel[1]*dt
 
