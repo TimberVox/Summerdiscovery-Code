@@ -3,7 +3,7 @@ import pygame
 key_A=97
 key_D=100
 key_W=119
-ground=500
+ground=450
 mario_pos=[0,ground]
 mario_size=[360,251]
 mario_vel=[0,0]
@@ -51,7 +51,6 @@ while running:
     mario_pos[1] += mario_vel[1]*dt
 
     screen.fill([110,220,250])
-    pygame.draw.rect(screen,[255,0,0],)
     screen.blit(mario_image,mario_pos)
     
     pygame.display.flip()
